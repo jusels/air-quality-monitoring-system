@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Air Quality Monitoring System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1 { color: #2c3e50; }
+        h2 { color: #34495e; margin-top: 30px; }
+        ul { padding-left: 20px; }
+        li { margin: 10px 0; }
+        a { color: #2980b9; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .endpoint { font-family: monospace; background: #f5f5f5; padding: 8px; border-radius: 4px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        footer { text-align: center; margin-top: 30px; padding: 20px; color: #7f8c8d; font-size: 0.9em; border-top: 1px solid #ecf0f1; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project Aether</h1>
+        <p>Air Quality Monitoring System for the Netherlands</p>
+
+        <h2>API Endpoints</h2>
+
+        <h3>📊 Dashboards</h3>
+        <ul>
+            <li><a href="/map">Real-time Map</a> - Interactive sensor map</li>
+            <li><a href="/status">System Status</a> - Health and statistics</li>
+        </ul>
+        <h3>📈 Historical Data</h3>
+        <ul>
+            <li><span class="endpoint">GET /history/{sensor_id}</span> - Time series chart</li>
+            <li><span class="endpoint">GET /distribution/{year}/{month}</span> - Province distribution</li>
+        </ul>
+
+        <h3>📤 Data Ingestion</h3>
+        <ul>
+            <li><span class="endpoint">POST /ingest</span> - Submit sensor readings</li>
+        </ul>
+
+        <h3>📚 Documentation</h3>
+        <ul>
+            <li><a href="/docs">Interactive API Docs</a> - Swagger UI</li>
+        </ul>
+        <h2>Quick Examples</h2>
+        <ul>
+            <li><a href="/history/sensor_amsterdam_001">Amsterdam sensor history</a></li>
+            <li><a href="/distribution/2024/1">January 2024 distribution</a></li>
+        </ul>
+
+        <p style="margin-top: 40px; color: #7f8c8d;">
+            15 IoT sensors | Netherlands | FastAPI
+        </p>
+    </div>
+    <footer>
+        <p>© 2025 Created by Iuliia Lapan | End-Term Assignment</p>
+    </footer>
+</body>
+</html>
