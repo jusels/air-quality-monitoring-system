@@ -1,7 +1,11 @@
 # Project Aether - Air Quality Monitoring System
 
 ## Overview
-Real-time and historical air quality monitoring with data ingestion, visualization, and analytics.
+This project implements a production-style backend service for an air quality monitoring system in the Netherlands. Built with FastAPI and following clean architecture principles, the system supports real-time data ingestion, validation of geospatial sensor locations using WKT parsing, and processing of historical environmental data.
+
+The application exposes multiple API endpoints for data access, system monitoring, and analytics, and generates interactive visualizations including maps, time-series charts, and distribution analyses using Plotly. All system behavior is driven by configuration files, ensuring flexibility and maintainability without hardcoded values.
+
+The project also includes a comprehensive test suite using FastAPI’s TestClient to ensure reliability and correctness of all endpoints.
 
 ## Installation
 ```bash
